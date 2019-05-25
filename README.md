@@ -2,7 +2,7 @@
 
 An ExHentai viewer for iOS, built by Dart and Flutter, *for my personal use*.
 
-![preview1](doc/preview1.png) ![preview2](doc/preview2.png)
+![preview](doc/preview.png)
 
 ## Usage
 
