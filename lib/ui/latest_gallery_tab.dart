@@ -1,7 +1,6 @@
 import 'package:eh_lib/eh_lib.dart';
-import 'package:flutter/cupertino.dart';
-
 import 'package:ex_viewer/ui/widget/base_gallery_list_view.dart';
+import 'package:flutter/cupertino.dart';
 
 class LatestGalleryTab extends StatefulWidget {
   @override
@@ -17,13 +16,11 @@ class LatestGalleryTabViewState extends BaseGalleryListViewState<LatestGalleryTa
     return EhSession().fetchGalleries(
       page,
       keyword: '',
-      excludedCategories: EhCategory.exclude([
-        EhCategories.Misc,
-        EhCategories.ImageSet,
-        EhCategories.Western,
-        EhCategories.AsianPorn,
-        EhCategories.Cosplay
-      ]),
+      //excludedCategories: EhCategory.include(
+      //  [
+      //    EhCategories.NonH,
+      //  ],
+      //),
     );
   }
 }

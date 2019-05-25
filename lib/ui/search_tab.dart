@@ -26,9 +26,9 @@ class SearchTabViewState extends BaseGalleryListViewState<SearchTab> {
             child: Container(
               decoration: BoxDecoration(color: Color(0xFFF9F9F9)),
               child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 10.0,vertical: 8.0),
-                decoration: BoxDecoration(
-                    color: CupertinoColors.lightBackgroundGray, borderRadius: BorderRadius.circular(5.0)),
+                margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 8.0),
+                decoration:
+                    BoxDecoration(color: CupertinoColors.lightBackgroundGray, borderRadius: BorderRadius.circular(5.0)),
                 child: Row(
                   children: <Widget>[
                     Icon(
@@ -67,6 +67,14 @@ class SearchTabViewState extends BaseGalleryListViewState<SearchTab> {
   @override
   Future<List<EhGallery>> itemFetcher(int page) {
     debugPrint('itemFetcher: P=$page, KW="$keyword"');
-    return EhSession().fetchGalleries(page, keyword: keyword);
+    return EhSession().fetchGalleries(
+      page,
+      keyword: keyword,
+      //excludedCategories: EhCategory.include(
+      //  [
+      //    EhCategories.NonH,
+      //  ],
+      //),
+    );
   }
 }

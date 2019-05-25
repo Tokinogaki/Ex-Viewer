@@ -84,12 +84,7 @@ class _GalleryDetailPageState extends State<GalleryDetailPage> {
                                 'Add to Favourite',
                                 style: TextStyle(color: CupertinoColors.destructiveRed),
                               ),
-                              onPressed: () => Navigator.pushReplacement(
-                                    context,
-                                    CupertinoPageRoute(
-                                      builder: (context) => GalleryDetailPage(widget.gallery),
-                                    ),
-                                  ),
+                              onPressed: null,
                             ),
                           ),
                         ),
@@ -129,7 +124,7 @@ class _GalleryDetailPageState extends State<GalleryDetailPage> {
                   ),
                 ),
                 SliverToBoxAdapter(
-                  child: Container(height: 20, child: Text('text')),
+                  child: Container(height: 20, child: Text('[TODO: display thumbnail here]')),
                 )
               ],
             ),

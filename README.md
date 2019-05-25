@@ -1,16 +1,24 @@
-# ex_viewer
+# ExViewer
 
-A new Flutter project.
+An ExHentai viewer for iOS, built by Dart and Flutter, *for my personal use*.
 
-## Getting Started
+![preview1](doc/preview1.png) ![preview2](doc/preview2.png)
 
-This project is a starting point for a Flutter application.
+## Usage
 
-A few resources to get you started if this is your first Flutter project:
+1. Install this app onto your iOS device. 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+2. Go to `ExHentai → Settings` (at the top of the page), **create a new profile** with the following settings:
+- `Front Page Settings`: `Thumbnail`
+- `Search Result Count`: `25`
+- `Thumbnail Settings → Size`: `Large`
+- Feel free to adjust other settings, like `Excluded Categories` and `Excluded Languages`.
+3. Save the new profile (“Save” button at the very bottom) **and set it as default**.
+4. (Optional) Choose the old profile from the drop-down list and save again. This ensures that a different profile is used in your browser.
+5. Check the first item in the Profile drop-down list. It should comply with the above settings and have a label “Default Profile”.
+6. Run Ex-Viewer on your device and log in. Enjoy :)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Todo items
+
+- Better search experience: custom categories and most-used tags
+- Favourites management: add and remove
